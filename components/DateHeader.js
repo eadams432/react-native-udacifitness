@@ -1,9 +1,11 @@
-import React from 'react';
-import { render } from 'react-dom';
+import React from 'react'
 import { Text } from 'react-native'
+import { purple } from '../utils/colors'
 
-export default function DateHeader(props){
-    return (
-        <Text>{props.date}</Text>
-    );
+export default function DateHeader ({ date }) {
+  return (
+    <Text style={{color: purple, fontSize: 25}}>
+      {date}
+    </Text>
+  )
 }
